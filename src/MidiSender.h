@@ -1,13 +1,13 @@
 #pragma once
 
-#include "ofxMSAControlFreakMidi/src/MidiBase.h"
+#include "ofxMSAControlFreakMidi/src/MidiManagerBase.h"
 
 
 namespace msa {
     namespace controlfreak {
         namespace midi {
             
-            class Sender : public Base {
+            class Sender : public ManagerBase {
             public:
                 void setup(int port);
                 void update();

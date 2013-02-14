@@ -1,8 +1,6 @@
 #pragma once
 
-#include "ofxMSAControlFreak/src/ofxMSAControlFreak.h"
-#include "ofxMSAControlFreakMidi/src/ofxMSAControlFreakMidi.h"
-#include "ofxMidi.h"
+#include "ofxMSAControlFreakMidi/src/MidiManagerBase.h"
 
 namespace msa {
     namespace controlfreak {
@@ -13,10 +11,10 @@ namespace msa {
                 void setup(int port);
                 void update();
                 
-                void newMidiMessage(ofxMidiMessage& msg);
-                
             private:
                 ofxMidiIn midiIn;
+                
+                void newMidiMessage(ofxMidiMessage& msg);
                 
             };
             
